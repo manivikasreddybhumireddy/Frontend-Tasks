@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Pattern 5
+
+    //     1
+    //    222
+    //   33333
+    //  4444444
+    // 555555555
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=1;i<=2*j-1;i++){
+    //         document.write(j)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // Pattern 6
+
+    // 555555555
+    //  4444444
+    //   33333
+    //    222
+    //     1
+
+    // for(let j=5;j>=1;j--){
+    //     for(let i=5;i>j;i--){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=1;i<=2*j-1;i++){
+    //         document.write(j)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // Pattern 7
+
+    //     5
+    //    444
+    //   33333
+    //  2222222
+    // 111111111
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=1;i<=2*j-1;i++){
+    //         document.write(6-j)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // Pattern 8
+
+    // 111111111
+    //  2222222
+    //   33333
+    //    444
+    //     5
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=1;i<=11-2*j;i++){
+    //         document.write(j)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    //     5
+    //    545
+    //   54345
+    //  5432345
+    // 543212345
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=5;i>=6-j;i--){
+    //         document.write(i)
+    //     }
+    //     for(let i=7-j;i<=5;i++){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 543212345
+    //  5432345
+    //   54345
+    //    545
+    //     5
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=5;i>=j;i--){
+    //         document.write(i)
+    //     }
+    //     for(let i=j+1;i<=5;i++){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 123454321
+    //  1234321
+    //   12321
+    //    121
+    //     1
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=1;i<=6-j;i++){
+    //         document.write(i)
+    //     }
+    //     for(let i=5-j;i>=1;i--){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 543212345
+    //  4321234
+    //   32123
+    //    212
+    //     1
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=6-j;i>=1;i--){
+    //         document.write(i)
+    //     }
+    //     for(let i=2;i<=6-j;i++){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 123454321
+    //  2345432
+    //   34543
+    //    454
+    //     5
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=j;i<=5;i++){
+    //         document.write(i)
+    //     }
+    //     for(let i=4;i>=j;i--){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 54321
+    //  5432
+    //   543
+    //    54
+    //     5
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=5;i>=j;i--){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 54321
+    //  4321
+    //   321
+    //    21
+    //     1
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=6-j;i>=1;i--){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 12345
+    //  1234
+    //   123
+    //    12
+    //     1
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=1;i<=6-j;i++){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    // 12345
+    //  2345
+    //   345
+    //    45
+    //     5
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=j;i<=5;i++){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    //     1
+    //    212
+    //   32123
+    //  4321234 
+    // 543212345 
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=j;i>=1;i--){
+    //         document.write(i+"&nbsp;")
+    //     }
+    //     for(let i=2;i<=j;i++){
+    //         document.write(i+"&nbsp;")
+    //     }
+    //     document.write("<br/>")
+    // }
+
+
+    //     5
+    //    454
+    //   34543
+    //  2345432
+    // 123454321
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;")
+    //     }
+    //     for(let i=6-j;i<=5;i++){
+    //         document.write(i)
+    //     }
+    //     for(let i=4;i>=6-j;i--){
+    //         document.write(i)
+    //     }
+    //     document.write("<br/>")
+    // }
+
+    //     1
+    //    121
+    //   12321
+    //  1234321
+    // 123454321
+
+    // for(let j=1;j<=5;j++){
+    //     for(let i=1;i<=5-j;i++){
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for(let i=1;i<=j;i++){
+    //         document.write(i+"&nbsp;")
+    //     }
+    //     for(let i=j-1;i>=1;i--){
+    //         document.write(i+"&nbsp;")
+    //     }
+    //     document.write("<br/>")
+    // }
+
+    </script>
+</body>
+</html>
